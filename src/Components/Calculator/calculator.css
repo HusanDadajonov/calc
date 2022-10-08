@@ -1,0 +1,150 @@
+/* Credit 
+        Developed/Code by Devance */
+
+/* Font style/Family */
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+/* Reset CSS */
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lexend", sans-serif;
+	font-size: var(--fs-primary);
+	font-weight: var(--fw-400);
+	color: var(--color-text);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* CSS Variables */
+:root {
+	/* Colors */
+	--red: #ff6f6f;
+	--green: #79bd8f;
+
+	/* Font Size */
+	--fs-primary: 1.3rem;
+	--fs-secondary: 2rem;
+
+	/* Font Weight */
+	--fw-400: 400;
+	--fw-500: 500;
+}
+
+/* For light mode */
+.default-mode {
+	--main-background: #f0f0f0;
+	--box-backgorund: #ffffff;
+	--color-text: #000000;
+	--shadows: #cfcfcf;
+}
+
+/* For Dark mode */
+.dark-mode {
+	--main-background: #081119e0;
+	--box-backgorund: #0e0f1b54;
+	--color-text: #f0f0f0;
+	--shadows: #262626c7;
+}
+
+/* Utility Classes */
+
+.red {
+	color: var(--red);
+}
+
+.green {
+	color: var(--green);
+}
+
+.text-500 {
+	font-size: var(--fs-secondary);
+	font-weight: var(--fw-500);
+}
+
+.icons {
+	width: 0.8em;
+}
+
+.invert-icon-white {
+	filter: invert(100%);
+}
+
+.invert-icon-grey {
+	filter: invert(60%);
+}
+
+/* General CSS */
+.container {
+	min-height: 100vh;
+	background-color: var(--main-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	margin: 0.5em;
+	background-color: var(--box-backgorund);
+	box-shadow: -1px -1px 26px 4px var(--shadows);
+	border-radius: 0.6em;
+	padding-top: 0.4em;
+}
+
+.modes {
+	display: flex;
+	justify-content: space-between;
+	width: 3em;
+	margin: 0 auto 3em auto;
+	padding: 0.2em 0.4em;
+	border-radius: 0.4em;
+	background-color: var(--main-background);
+	cursor: pointer;
+}
+
+.numbers {
+	text-align: right;
+	padding: 0.8em 0.6em;
+	overflow-wrap: break-word;
+	width: 10em;
+    height: 150px;
+}
+
+.btn-box {
+	background-color: var(--main-background);
+	border-radius: 0.6em;
+	padding: 0.4em 0.2em 0.8em 0.2em;
+}
+
+.btn {
+	text-align: center;
+	padding: 0.2em 0.6em;
+	width: 2em;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0.2em;
+	box-shadow: 2px 2px 6px -1px var(--shadows);
+	cursor: pointer;
+}
+
+.f-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.4em;
+}
+
+.no-event {
+	pointer-events: none;
+}
